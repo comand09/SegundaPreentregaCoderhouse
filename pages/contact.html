@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning bootstrap v5 with sass</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+        
+<!-- ////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 1 - THE NAVBAR SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////-->
+<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/img/arts/logo-aqsappliancerapir.png" alt="logo image">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="/index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="/pages/service/washer.html">Washer Repair Services</a></li>
+              <li><a class="dropdown-item" href="/pages/service/dryer.html">Dryer Repair Services</a></li>
+              <li><a class="dropdown-item" href="/pages/service/stove.html">Stove Repair Services</a></li>
+              <li><a class="dropdown-item" href="/pages/service/refrigerator.html">Refrigerator Repair Services</a></li>
+              <li><a class="dropdown-item" href="/pages/service/wine.html">Wine Cooler Repair Services</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/faq.html">faq</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/Blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="">contact</a>
+          </li>
+        </ul>
+        <a class="text-dark text-decoration-none" href="tel:7862677207">
+          <button type="button" class="rounded-pill btn-rounded border-primary ">7862677207<span><i class="fas fa-arrow-right"></i></span></button>
+        </a> 
+      </div>
+    </div>
+  </nav>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////
+                           START SECTION 2 - GET STARTED SECTION 
+///////////////////////////////////////////////////////////////////////////////////////////////-->
+      <section id="contact" class="get-started">
+        <div class="container">
+          <div class="row text-center">
+            <h1 class="display-3 fw-bold text-capitalize mt-5">Get started</h1>
+            <div class="heading-line"></div>
+            <p class="lh-lg">
+              Our Commitment to Your Satisfaction
+            </p>
+          </div>
+
+          <!--Start the cta content-->
+          <div class="row text-white get-section">
+            <div class="col-12 col-lg-6 gradient shadow p-3">
+              <div class="cta-info w-100">
+                <h4 class="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
+                <p class="lh-lg">
+                  Experience our 100% satisfaction guarantee and see the difference!
+                </p>
+                <h3 class="display-3--brief">What will be the next step?</h3>
+                <ul class="cta-info__list">
+                  <li><strong>Contact Us:</strong> Call us or fill out our online form to request a service appointment.</li>
+                  <li><strong>Schedule an Appointment:</strong> Choose a convenient time for our technicians to visit your home.</li>
+                  <li><strong>Enjoy Professional Service:</strong> Our experts will repair your appliance efficiently and ensure your complete satisfaction.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 bg-white shadow p-3">
+              <div class="form w-100 pb-2">
+                <h4 class="display-3--title mb-5">Get in Touch!</h4>
+                <form action="#" class="row">
+                  <div class="col-lg-6 col-md-6 mb-3">
+                    <input type="text" placeholder="First Name" id="inputFirstName" class="shadow form-control form-control-lg">
+                  </div>
+                  <div class="col-lg-6 col-md-6 mb-3">
+                    <input type="text" placeholder="Last Name" id="inputLastName" class="shadow form-control form-control-lg">
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <input type="email" placeholder="email address" id="inputEmail" class="shadow form-control form-control-lg">
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <textarea name="message" placeholder="message" id="message" rows="8" class="shadow form-control form-control-lg"></textarea>
+                  </div>
+                  <div class="text-center d-grid mt-1">
+                    <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3">
+                      submit
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////
+                           START SECTION 3 - CONTACT INFORMATION SECTION 
+///////////////////////////////////////////////////////////////////////////////////////////////-->
+   <div class="container mt-4">
+    <div class="row">
+      <div class="col-xl-6">
+        <div class="row row-cols-md-2 g-4">
+          <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="aos-item__inner">
+              <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                <div class="d-flex justify-content-start">
+                  <i class="fa-solid fa-envelope h3 pe-2"></i>
+                  <span class="h5">Email</span>
+                </div>
+                <span>example@domain.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="aos-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="aos-item__inner">
+              <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                <div class="d-flex justify-content-start">
+                  <i class="fa-solid fa-phone-flip h3 pe-2"></i>
+                  <span class="h5 mx-1">Phone</span>
+                </div>
+                <span>+0123456789, +9876543210</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aos-item mt-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="aos-item__inner">
+            <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+              <div class="d-flex justify-content-start">
+                <i class="fa-solid fa-map-marker-alt h3 pe-2"></i>
+                <span class="h5">Office location</span>
+              </div>
+              <span>#007, Street name, Bigtown BG23 4YZ, England</span>
+            </div>
+          </div>
+        </div>
+        <div class="aos-item" data-aos="fade-up" data-aos-delay="800">
+          <div class="mt-4 mb-4 aos-item__inner">
+            <iframe class="hvr-shadow" width="100%" height="345" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.079959478298!2d-79.02838532593995!3d-8.11534798188728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d1b3131b0dd%3A0x5a712e985a104992!2sTrujillo!5e0!3m2!1ses-419!2spe!4v1715089789481!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6">
+        <h2>Leave a message</h2>
+        <div class="row g-4">
+          <div class="col-6 mb-3">
+            <label for="fname" class="form-label">Name</label>
+            <input type="text" class="form-control border border-dark" id="name" placeholder="John">
+          </div>
+          <div class="col-6 mb-3">
+            <label for="lname" class="form-label">Last Name</label>
+            <input type="text" class="form-control border border-dark" id="last name" placeholder="Doe">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control border border-dark" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="tel" class="form-control border border-dark" id="phone" placeholder="+1234567890">
+        </div>
+        <div class="mb-3">
+          <label for="country" class="form-label ">Country</label>
+          <select class="form-select border border-dark" aria-label="Country selection">
+            <option value="1">USA</option>
+            <option value="2">Non USA</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label ">Message</label>
+          <textarea class="form-control border border-dark" id="message" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-dark button-start">Send Message</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////
+                           START SECTION 4 - THE FOOTER  
+///////////////////////////////////////////////////////////////////////////////////////////////-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- CONTENT FOR THE MOBILE NUMBER  -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            <path d="M15 7a2 2 0 0 1 2 2" />
+            <path d="M15 3a6 6 0 0 1 6 6" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="tel:7862677277" class="contact-box__info--title">+1 7862677207</a>
+          <p class="contact-box__info--subtitle">  Mon-Fri 9am-6pm</p>
+        </div>
+
+     
+
+      </div>  
+      <!-- CONTENT FOR EMAIL  -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <polyline points="3 9 12 15 21 9 12 3 3 9" />
+            <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+            <line x1="3" y1="19" x2="9" y2="13" />
+            <line x1="15" y1="13" x2="21" y2="19" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="#" class="contact-box__info--title">info@aqsappliances.com</a>
+          <p class="contact-box__info--subtitle">Online support</p>
+        </div>
+      </div>
+      <!-- CONTENT FOR LOCATION  -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="18" y1="6" x2="18" y2="6.01" />
+            <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+            <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+            <line x1="9" y1="4" x2="9" y2="17" />
+            <line x1="15" y1="15" x2="15" y2="20" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="#" class="contact-box__info--title">Florida, USA</a>
+          <p class="contact-box__info--subtitle">Oakland Park</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- START THE SOCIAL MEDIA CONTENT  -->
+  <div class="footer-sm">
+    <div class="container">
+      <div class="row py-4 text-center text-white">
+        <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+          connect with us on social media
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- START THE CONTENT FOR THE CAMPANY INFO -->
+  <div class="container mt-5">
+    <div class="row text-white justify-content-center mt-3 pb-3">
+      <div class="col-12 col-sm-6 col-lg-6 mx-auto">
+        <h5 class="text-capitalize fw-bold">AQS Appliance Repair</h5>
+        <hr class="bg-white d-inline-block mb-4 fotter-line">
+        <p class="lh-lg">
+          Expert Appliance Repair Services in Broward & Miami-Dade Counties
+        </p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        <h5 class="text-capitalize fw-bold service-column">Services</h5>
+        <hr class="bg-white d-inline-block mb-4 service-column fotter-line">
+        <ul class="list-inline campany-list">
+          <li class="service-column"><a href="#">Washer Repair</a></li>
+          <li class="service-column"><a href="#">Dryer Repair</a></li>
+          <li class="service-column"><a href="#">Refrigerator Repair</a></li>
+          <li class="service-column"><a href="#">Stove & Oven Repair</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        <h5 class="text-capitalize fw-bold">useful links</h5>
+        <hr class="bg-white d-inline-block mb-4 fotter-line">
+        <ul class="list-inline campany-list">
+          <li><a href="#"> FAQ</a></li>
+          <li><a href="#">Become an Affiliate</a></li>
+          <li><a href="#">create an account</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        <h5 class="text-capitalize fw-bold contact-column">contact</h5>
+        <hr class="bg-white d-inline-block mb-4 contact-column fotter-line">
+        <ul class="list-inline campany-list">
+          <li class="contact-column"><a href="#">Book Now</a></li>
+          <li class="contact-column"><a href="#"></a></li>
+          <li class="contact-column"><a href="#"></a></li>
+          <li class="contact-column"><a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- START THE COPYRIGHT INFO  -->
+  <div class="footer-bottom pt-5 pb-5">
+    <div class="container">
+      <div class="row text-center text-white">
+        <div class="col-12">
+          <div class="footer-bottom__copyright">
+            &COPY; Copyright 2025 <a href="#">AQS Appliance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP BUTTON  -->
+<a href="#" class="shadow btn-primary rounded-circle back-to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+    
+
+
+
+      <script src="assets/vendors/js/glightbox.min.js"></script>
+      
+
+      <script type="text/javascript">
+        const lightbox = GLightbox({
+          'touchNavigation': true,
+          'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+          'type': 'video',
+          'source': 'youtube', //vimeo, youtube or local
+          'width': 900,
+          'autoPlayVideos': 'true',
+  });
+      
+      </script>
+       <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

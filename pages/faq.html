@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning bootstrap v5 with sass</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+        
+<!-- ////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 1 - THE NAVBAR SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////-->
+<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/img/arts/logo-aqsappliancerapir.png" alt="logo image">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="/index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="/pages/service/washer.html">Washer Repair Services</a></li>
+              <li><a class="dropdown-item" href="/pages/service/dryer.html">Dryer Repair Services</a></li>
+              <li><a class="dropdown-item" href="/pages/service/stove.html">Stove Repair Services</a></li>
+              <li><a class="dropdown-item" href="/pages/service/refrigerator.html">Refrigerator Repair Services</a></li>
+              <li><a class="dropdown-item" href="/pages/service/wine.html">Wine Cooler Repair Services</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="">faq</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/Blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/contact.html">contact</a>
+          </li>
+        </ul>
+        <a class="text-dark text-decoration-none" href="tel:7862677207">
+          <button type="button" class="rounded-pill btn-rounded border-primary ">7862677207<span><i class="fas fa-arrow-right"></i></span></button>
+        </a> 
+      </div>
+    </div>
+  </nav>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////
+                           START SECTION 2 - FAQ SECTION 
+///////////////////////////////////////////////////////////////////////////////////////////////-->
+       <section id="faq" class="faq">
+        <div class="container">
+          <div class="row text-center">
+            <h1 class="display-3 fw-bold text-uppercase mt-5 faq-tittle">FAQ</h1>
+            <div class="heading-line"></div>
+            <p class="lead">frequently asked questions, get knowledge before hand</p>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-12">
+              <div class="accordion" id="accordionExample">
+                <!--Accordation Item 1-->
+                <div class="accordion-item shadow mb-3">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      What types of appliances do you repair? <span class="accordion-icon"></span>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      We repair a wide range of home appliances, including washing machines, dryers, refrigerators, ovens, microwaves, dishwashers, wine coolers, freezers, garbage disposals, and hood stoves. Our skilled technicians are trained to work with most major brands and models.
+                    </div>
+                  </div>
+                </div>
+                <!--Accordation Item 2-->
+                <div class="accordion-item shadow mb-3">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      How long does an appliance repair usually take? <span class="accordion-icon"></span>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      The duration of a repair depends on the type and complexity of the issue. Minor repairs can often be completed within an hour, while more complex problems may require additional time or multiple visits if parts need to be ordered. We strive to complete repairs as quickly as possible without compromising quality.
+                    </div>
+                  </div>
+                </div>
+                <!--Accordation Item 3-->
+                <div class="accordion-item shadow mb-3">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Do you offer a warranty on your repair services? <span class="accordion-icon"></span>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Yes, we stand by the quality of our work. We offer a warranty on parts and labor to ensure your peace of mind. If an issue arises with the same appliance related to our repair within the warranty period, we’ll address it promptly at no additional cost.
+                    </div>
+                  </div>
+                </div>
+                <!--Accordation Item 4-->
+                <div class="accordion-item shadow mb-3">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      What should I do before calling for an appliance repair? <span class="accordion-icon"></span>
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Before contacting us, ensure the appliance is plugged in and check for simple issues like tripped circuit breakers or blown fuses. For refrigerators, verify that the temperature settings are correct. If the problem persists after basic troubleshooting, reach out to our professionals for an expert diagnosis and repair.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////
+                           START SECTION 3 - QUESTION SECTION 
+///////////////////////////////////////////////////////////////////////////////////////////////-->
+<section class="questions-section py-5" id="about">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Kind of Questions We Resolve</h2>
+      <p class="text-muted">
+        Your go-to resource for all your AQS Appliance inquiries.<br>
+        We're here to help you get the answers you need.
+      </p>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="/img/arts/Questions.png" alt="about AQS Appliance support" class="img-fluid question-photo rounded shadow" />
+      </div>
+      <div class="col-lg-6">
+        <h3 class="fw-bold mb-3 answer-tittle">Get the Answers You're Looking For</h3>
+        <p class="text-muted answer-body">
+          Whether you have questions about the features of your AQS appliance, need assistance troubleshooting a problem, or want to understand more about its maintenance, we're here to provide clear and helpful information. Our aim is to make your experience with AQS appliances as smooth and straightforward as possible.
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-md-6 mb-2">
+            <p class="body-point"><i class="fas fa-question-circle text-success me-2"></i>Understanding Product Features</p>
+          </div>
+          <div class="col-md-6 mb-2">
+            <p><i class="fas fa-question-circle text-success me-2"></i>Troubleshooting Common Issues</p>
+          </div>
+          <div class="col-md-6 mb-2">
+            <p><i class="fas fa-question-circle text-success me-2"></i>Finding Accessories & Parts</p>
+          </div>
+          <div class="col-md-6 mb-2">
+            <p><i class="fas fa-question-circle text-success me-2"></i>Warranty Information & Claims</p>
+          </div>
+          <div class="col-md-6 mb-2">
+            <p><i class="fas fa-question-circle text-success me-2"></i>Appliance Care & Maintenance</p>
+          </div>
+          <div class="col-md-6 mb-2">
+            <p><i class="fas fa-question-circle text-success me-2"></i>Scheduling Service & Support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////
+                           START SECTION 4 - THE FOOTER  
+///////////////////////////////////////////////////////////////////////////////////////////////-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- CONTENT FOR THE MOBILE NUMBER  -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            <path d="M15 7a2 2 0 0 1 2 2" />
+            <path d="M15 3a6 6 0 0 1 6 6" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="tel:7862677277" class="contact-box__info--title">+1 7862677207</a>
+          <p class="contact-box__info--subtitle">  Mon-Fri 9am-6pm</p>
+        </div>
+
+     
+
+      </div>  
+      <!-- CONTENT FOR EMAIL  -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <polyline points="3 9 12 15 21 9 12 3 3 9" />
+            <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+            <line x1="3" y1="19" x2="9" y2="13" />
+            <line x1="15" y1="13" x2="21" y2="19" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="#" class="contact-box__info--title">info@aqsappliances.com</a>
+          <p class="contact-box__info--subtitle">Online support</p>
+        </div>
+      </div>
+      <!-- CONTENT FOR LOCATION  -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="18" y1="6" x2="18" y2="6.01" />
+            <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+            <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+            <line x1="9" y1="4" x2="9" y2="17" />
+            <line x1="15" y1="15" x2="15" y2="20" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="#" class="contact-box__info--title">Florida, USA</a>
+          <p class="contact-box__info--subtitle">Oakland Park</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- START THE SOCIAL MEDIA CONTENT  -->
+  <div class="footer-sm">
+    <div class="container">
+      <div class="row py-4 text-center text-white">
+        <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+          connect with us on social media
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- START THE CONTENT FOR THE CAMPANY INFO -->
+  <div class="container mt-5">
+    <div class="row text-white justify-content-center mt-3 pb-3">
+      <div class="col-12 col-sm-6 col-lg-6 mx-auto">
+        <h5 class="text-capitalize fw-bold">AQS Appliance Repair</h5>
+        <hr class="bg-white d-inline-block mb-4 fotter-line">
+        <p class="lh-lg">
+          Expert Appliance Repair Services in Broward & Miami-Dade Counties
+        </p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        <h5 class="text-capitalize fw-bold service-column">Services</h5>
+        <hr class="bg-white d-inline-block mb-4 service-column fotter-line">
+        <ul class="list-inline campany-list">
+          <li class="service-column"><a href="#">Washer Repair</a></li>
+          <li class="service-column"><a href="#">Dryer Repair</a></li>
+          <li class="service-column"><a href="#">Refrigerator Repair</a></li>
+          <li class="service-column"><a href="#">Stove & Oven Repair</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        <h5 class="text-capitalize fw-bold">useful links</h5>
+        <hr class="bg-white d-inline-block mb-4 fotter-line">
+        <ul class="list-inline campany-list">
+          <li><a href="#"> FAQ</a></li>
+          <li><a href="#">Become an Affiliate</a></li>
+          <li><a href="#">create an account</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        <h5 class="text-capitalize fw-bold contact-column">contact</h5>
+        <hr class="bg-white d-inline-block mb-4 contact-column fotter-line">
+        <ul class="list-inline campany-list">
+          <li class="contact-column"><a href="#">Book Now</a></li>
+          <li class="contact-column"><a href="#"></a></li>
+          <li class="contact-column"><a href="#"></a></li>
+          <li class="contact-column"><a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- START THE COPYRIGHT INFO  -->
+  <div class="footer-bottom pt-5 pb-5">
+    <div class="container">
+      <div class="row text-center text-white">
+        <div class="col-12">
+          <div class="footer-bottom__copyright">
+            &COPY; Copyright 2025 <a href="#">AQS Appliance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP BUTTON  -->
+<a href="#" class="shadow btn-primary rounded-circle back-to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+    
+
+
+
+      <script src="assets/vendors/js/glightbox.min.js"></script>
+      
+
+      <script type="text/javascript">
+        const lightbox = GLightbox({
+          'touchNavigation': true,
+          'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+          'type': 'video',
+          'source': 'youtube', //vimeo, youtube or local
+          'width': 900,
+          'autoPlayVideos': 'true',
+  });
+      
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

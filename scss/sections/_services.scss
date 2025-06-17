@@ -1,0 +1,80 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+.servicess{
+    background: linear-gradient(to right, rgba(white, 0.95), rgba(#92C064, 0.2));
+  
+}
+
+.service2{
+    background: linear-gradient(to right, rgba(white, 0.95), rgba(#92C064, 0.2));
+    padding-top: 3rem;
+    //padding-bottom: 6rem;
+    
+    .service2-info {
+        padding: 3rem;
+        margin: 1rem 0; 
+      
+  
+        &__list {
+            position: relative;
+            list-style-type: none;
+            display: block;
+            padding-top: 0.5rem;
+            padding-left: 0.5rem;
+            margin-bottom: 0.7rem;
+    
+            li::before {
+                font-family: "Font Awesome 5 Free";
+                content: "\f00c";
+                font-weight: 600;
+                margin-right: 0.5rem;
+                font-size: 1.2rem;
+            }
+        }
+        
+        
+    }
+
+}
+
+
+.button2-link {
+    display: inline-block;
+    background-color: #3498db; /* Base color */
+    color: #fff; /* Text color */
+    padding: 12px 24px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    cursor: pointer; /* Pointer cursor */
+  }
+  
+  /* Hover Effect */
+  .button2-link:hover {
+    background-color: #2980b9; /* Darker color on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+    transform: translateY(-2px); /* Lift effect */
+  }
+  
+  /* Active State */
+  .button2-link:active {
+    background-color: #1f5a85; /* Even darker color when active */
+    transform: scale(0.95); /* Pressed effect */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+  }
+  
+  /* Disabled State */
+  .button2-link.disabled,
+  .button2-link[aria-disabled="true"] {
+    background-color: #ccc; /* Gray background */
+    color: #666; /* Faded text color */
+    cursor: not-allowed; /* Disabled cursor */
+    box-shadow: none; /* No shadow */
+    pointer-events: none; /* Disable clicks */
+  }
+
+
